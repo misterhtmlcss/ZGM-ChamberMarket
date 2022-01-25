@@ -1,0 +1,95 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --red: hsl(359.6, 100%, 67.5%);
+  --yellow: hsl(46.3, 97.7%, 66.5%);
+  --green-1: hsl(175.7, 57.4%, 66.9%);
+  --green-2: hsl(175.7, 57.4%, 66.9%);
+  --green-3: hsl(185.3, 100%, 35.5%);
+  --green-4: hsl(189.7, 100%, 30.4%);
+  --black: hsl(190.8, 76.5%, 10%);
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: var(--white);
+  width: 100vw;
+  height: 100vh;
+}
+
+section {
+  overflow-x: hidden;
+  /* width: 100%; */
+}
+
+section#banner {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  height: 4.25rem;
+}
+
+section#banner img {
+  height: 1.75rem;
+}
+
+section#hero {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+section#hero a img {
+  width: 75%;
+  min-width: 18.9375rem;
+  max-width: 31.125rem;
+}
+
+section#hero a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+section#hero h1 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.125rem;
+  text-align: center;
+  letter-spacing: 0.0625rem;
+  color: var(--white);
+}
+
+section#intro {
+  background: var(--green-1);
+  height: 100%;
+}
+
+
+@media (min-width: 768px) {
+  section#banner {
+    justify-content: flex-start;
+  }
+
+  section#banner a {
+    margin-left: 4.375rem;
+  }
+
+}
