@@ -194,15 +194,15 @@ section#footer ul li {
 }
 section#footer #footer-icons {
   display: flex;
+  align-items: center;
   width: calc(100% - 4rem);
-  justify-content: space-evenly;
-  margin-left: -4rem;
+  max-width: 500px;
   margin-bottom: 4rem;
 }
 
 section#footer #footer-icons a {
   position: relative;
-  margin-left: 1rem;
+  margin-right: 4rem;
 }
 
 /* section#footer #footer-icons a:hover {
@@ -212,6 +212,10 @@ section#footer #footer-icons a {
   margin-top: -12px;
   margin-right: -10px;
 } */
+
+.spacer {
+  flex-grow: 2;
+}
 
 
 
