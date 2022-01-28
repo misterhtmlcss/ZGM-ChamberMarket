@@ -123,7 +123,7 @@ section#intro {
   justify-content: center;
 }
 
-section#intro .intro-content {
+section#intro .intro-container {
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -132,7 +132,7 @@ section#intro .intro-content {
   margin-top: 10rem;
 }
 
-section#intro .intro-content .intro-text {
+section#intro .intro-container .intro-text {
   position: absolute;
   width: 350px;
   height: 521px;
@@ -190,7 +190,7 @@ section#intro .yellow-arrow {
     height: 50%;
   }
 
-  section#intro .intro-content .intro-text {
+  section#intro .intro-container .intro-text {
     position: absolute;
     width: 625px;
     height: 510px;
