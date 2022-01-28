@@ -12,14 +12,11 @@ html, body {
   background-color: var(--white);
   width: 100vw;
   height: 100vh;
+  /* overflow: hidden; */
 }
 
 section {
   width: 100vw;
-}
-
-img {
-  overflow: hidden;
 }
 
 /* ========
@@ -185,9 +182,16 @@ section#intro .yellow-arrow {
 @media (min-width: 1400px) {
 
 
+  section#hero {
+
+  }
+
   section#intro .yellow-arrow {
-    top: 2em;
+    top: -7em;
     height: 50%;
+  }
+  section#intro .intro-container {
+    margin-top: 12rem;
   }
 
   section#intro .intro-container .intro-text {
@@ -198,7 +202,24 @@ section#intro .yellow-arrow {
     top: 44px;
   }
 
-  section#hero {
-
+  #footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 120px;
+    position: static;
+    width: 1440px;
+    height: 328.96px;
+    left: 0px;
+    top: 3728px;
   }
+
+  #footer div {
+    flex: none;
+    order: 6;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0px 0px;
+  }
+
 }
