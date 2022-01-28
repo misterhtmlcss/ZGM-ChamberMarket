@@ -165,9 +165,18 @@ section#footer .footer-container {
   margin-bottom: 121px;
   max-width: 100em;
 }
+section#footer .footer-container a {
+  color: var(--white);
+  text-decoration: none;
 
-section#footer ul img {
-  margin-bottom: 4rem;
+}
+section#footer .footer-container a:hover {
+  border-bottom: 2px solid var(--white);
+  padding-bottom: 5px;
+}
+
+section#footer .footer-details > ul > img {
+  margin-bottom: 5rem;
 }
 
 section#footer ul li {
@@ -183,6 +192,27 @@ section#footer ul li div {
 section#footer ul li {
   list-style-type: none;
 }
+section#footer #footer-icons {
+  display: flex;
+  width: calc(100% - 4rem);
+  justify-content: space-evenly;
+  margin-left: -4rem;
+  margin-bottom: 4rem;
+}
+
+section#footer #footer-icons a {
+  position: relative;
+  margin-left: 1rem;
+}
+
+/* section#footer #footer-icons a:hover {
+  border-radius: 50%;
+  border: 2px solid white;
+  padding: 10px;
+  margin-top: -12px;
+  margin-right: -10px;
+} */
+
 
 
 /* Large format device from iPad and up */
