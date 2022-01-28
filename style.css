@@ -150,12 +150,12 @@ section#intro .yellow-arrow {
 section#footer {
   display: flex;
   flex-direction: column;
-  padding: 5.0625rem 2rem 7.5rem 2rem;
-  background-color: var(--black);
-  color: var(--white);
+  padding-left: 2rem;
   line-height: 1rem;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 section#footer .footer-container {
@@ -164,6 +164,20 @@ section#footer .footer-container {
   margin-top: 81px;
   margin-bottom: 121px;
   max-width: 100em;
+}
+
+section#footer ul img {
+  margin-bottom: 4rem;
+}
+
+section#footer ul li {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 120%;
+}
+
+section#footer ul li div {
+  margin-top: 4rem;
 }
 
 section#footer ul li {
