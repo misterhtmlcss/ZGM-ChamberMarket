@@ -15,7 +15,11 @@ html, body {
 }
 
 section {
-  overflow-x: hidden;
+  width: 100vw;
+}
+
+img {
+  overflow: hidden;
 }
 
 /* ========
@@ -31,7 +35,7 @@ h1 {
   line-height: 2.125rem;
   letter-spacing: 0.0625rem;
   color: var(--white);
-  margin-top: 2em;
+  margin: 1.5em 2em;
 }
 
 /* ========
@@ -45,6 +49,14 @@ section#banner {
   justify-content: center;
   align-items: center;
   height: 4.25rem;
+}
+
+section#banner div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100rem;
 }
 
 section#banner img {
@@ -63,18 +75,21 @@ section#hero {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 0 1em;
+  background: var(--green-1);
 }
 
-section#hero .image-hero {
-  padding-left: 32em;
+section#hero div {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    width: 100%;
+    max-width: 100rem;
 }
 
-section#hero a img {
-  width: 85%;
-  min-width: 18.9375rem;
-  max-width: 31.125rem;
-
+section#hero .hero-image {
+  width: 100%;
+  max-width: 100rem;
+  padding-left: 28em;
 }
 
 section#hero a {
@@ -90,35 +105,57 @@ section#hero a {
   text-decoration: none;
 }
 
+section#hero a .title-logo {
+  width: 85%;
+  min-width: 18.9375rem;
+  max-width: 31.125rem;
+}
+section#hero h1 {
+  max-width: 20em;
+}
+
+
 /* Introduction Section */
 section#intro {
   background: var(--green-1);
-  height: 100%;
   position: relative;
-}
-
-section#intro .scroll-gap {
-  height: 10rem;
+  display: flex;
+  justify-content: center;
 }
 
 section#intro .intro-content {
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-end;
   width: 100%;
-  height: 883px;
+  max-width: 100rem;
+  margin-top: 10rem;
 }
 
-section#intro .intro-content img {
+section#intro .intro-content .intro-text {
+  position: absolute;
+  width: 350px;
+  height: 521px;
+  left: 24px;
+  top: 264px;
+}
+
+section#intro .woman-reading {
   width: 100%;
+  /* height: 360px; */
+}
+
+section#intro .yellow-arrow {
+  position: absolute;
+  right: -2em;
+  top: 8em;
+  height: 30%;
 }
 
 
 /* Large format device from iPad and up */
 @media (min-width: 992px) {
-  section#banner {
+  section#banner div {
     justify-content: flex-start;
   }
 
@@ -130,9 +167,38 @@ section#intro .intro-content img {
     height: 95%;
   }
 
-  section#hero .image-hero {
+  section#hero .hero-image {
     padding-left: 0;
   }
 
+  section#intro .woman-reading {
+    width: 95%;
+  }
 
+  section#intro .yellow-arrow {
+    top: 6em;
+  }
+
+
+}
+
+@media (min-width: 1400px) {
+
+
+  section#intro .yellow-arrow {
+    top: 2em;
+    height: 50%;
+  }
+
+  section#intro .intro-content .intro-text {
+    position: absolute;
+    width: 625px;
+    height: 510px;
+    left: 120px;
+    top: 44px;
+  }
+
+  section#hero {
+
+  }
 }
