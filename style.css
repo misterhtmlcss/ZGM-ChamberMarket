@@ -73,6 +73,7 @@ section#hero {
   align-items: center;
   position: relative;
   background: var(--green-1);
+  font-size: 20px;
 }
 
 section#hero div {
@@ -127,32 +128,54 @@ section#intro .intro-container {
   margin-top: 10rem;
 }
 
-section#intro .intro-container .intro-text {
-  position: absolute;
-  width: 350px;
-  height: 521px;
-  left: 24px;
-  top: 264px;
-}
-
 section#intro .woman-reading {
-  width: 100%;
-  /* height: 360px; */
+  transform: scale(1.2);
+  width: 120%;
+  padding-bottom: 500px;
 }
 
 section#intro .yellow-arrow {
   position: absolute;
-  right: -2rem;
-  top: 8rem;
-  height: 30%;
+  right: -1.5rem;
+  top: -8rem;
+  height: 22%;
 }
+
+section#intro .intro-text {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 26%;
+  height: 50%;
+  width: 50%;
+  min-height: 490px;
+  min-width: 350px;
+  max-width: 530px;
+  right: 0;
+  background-color: var(--white);
+}
+
+section#intro .intro-text div {
+  padding: 3rem 2rem;
+}
+
+section#intro .intro-text h2 {
+  font-size: 2.125rem;
+  font-family: var(--font-1);
+  font-weight: 600;
+}
+section#intro .intro-text p {
+  margin-top: 2rem;
+  line-height: 27.2px;
+  font-weight: 500;
+}
+
+
 
 section#footer {
   display: flex;
   flex-direction: column;
   padding-left: 2rem;
-  line-height: 1rem;
-  font-family: 'Inter', sans-serif;
   font-size: 15px;
   background-color: var(--black);
   color: var(--white);
@@ -161,13 +184,14 @@ section#footer {
 section#footer .footer-container {
   display: flex;
   flex-direction: column;
-  margin-top: 81px;
-  margin-bottom: 121px;
+  margin-top: 5.0625rem;
+  margin-bottom: 7.5625rem;
   max-width: 100em;
 }
 section#footer .footer-container a {
   color: var(--white);
   text-decoration: none;
+  font-family: var(--font-3) ;
 
 }
 section#footer .footer-container a:hover {
@@ -196,13 +220,13 @@ section#footer #footer-icons {
   display: flex;
   align-items: center;
   width: calc(100% - 4rem);
-  max-width: 500px;
+  max-width: 31.25rem;
   margin-bottom: 4rem;
 }
 
 section#footer #footer-icons a {
   position: relative;
-  margin-right: 4rem;
+  margin-right: 3rem;
 }
 
 /* section#footer #footer-icons a:hover {
@@ -218,16 +242,46 @@ section#footer #footer-icons a {
 }
 
 
+/* For iPad and up */
+@media (min-width: 768px) {
+  section#banner a {
+    margin-left: 4.375rem;
+  }
 
-/* Large format device from iPad and up */
-@media (min-width: 992px) {
   section#banner div {
     justify-content: flex-start;
   }
 
-  section#banner a {
-    margin-left: 4.375rem;
+  section#intro .intro-container {
+    margin-top: 8rem;
   }
+
+  section#intro .yellow-arrow {
+    top: -11rem;
+    height: 25%;
+    top: -4rem;
+  }
+
+  section#intro img.woman-reading {
+    transform: translateX(100px);
+  }
+
+  section#intro .intro-text {
+    width: 75%;
+    top: 36%;
+  }
+
+}
+
+/* Smooth transition to large device */
+@media (min-width: 992px) {
+  section#intro .intro-text div {
+    padding: 3rem 15%;
+  }
+}
+
+
+@media (min-width: 1200px) {
 
   section#hero a {
     height: 95%;
@@ -238,37 +292,26 @@ section#footer #footer-icons a {
     width: 100%;
   }
 
-  section#intro .woman-reading {
-    width: 95%;
+
+
+  section#intro img.woman-reading {
+    width: 91%;
   }
 
   section#intro .yellow-arrow {
-    top: -5rem;
-    /* height: 22rem; */
+    top: -6rem;
+    height: 36%;
     height: 50%;
+    max-height: 22rem;
   }
 
-
-}
-
-@media (min-width: 1400px) {
-
-
-  section#hero {
-
-  }
-
-  section#intro .yellow-arrow {
-    top: -7em;
-    height: 50%;
-  }
   section#intro .intro-container {
     margin-top: 12rem;
   }
 
-  section#intro .intro-container .intro-text {
+  section#intro .intro-text {
     position: absolute;
-    width: 625px;
+    width: 530px;
     height: 510px;
     left: 120px;
     top: 44px;
