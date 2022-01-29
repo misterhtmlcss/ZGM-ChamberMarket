@@ -150,6 +150,7 @@ section#intro .intro-text {
   width: 50%;
   min-height: 490px;
   min-width: 350px;
+  max-width: 530px;
   right: 0;
   background-color: var(--white);
 }
@@ -272,10 +273,15 @@ section#footer #footer-icons a {
 
 }
 
-/* Laptop device */
+/* Smooth transition to large device */
 @media (min-width: 992px) {
+  section#intro .intro-text div {
+    padding: 3rem 15%;
+  }
+}
 
 
+@media (min-width: 1200px) {
 
   section#hero a {
     height: 95%;
@@ -289,36 +295,23 @@ section#footer #footer-icons a {
 
 
   section#intro img.woman-reading {
-    width: 95%;
+    width: 91%;
   }
 
   section#intro .yellow-arrow {
-    top: -5rem;
-    /* height: 22rem; */
+    top: -6rem;
+    height: 36%;
     height: 50%;
+    max-height: 22rem;
   }
 
-
-}
-
-@media (min-width: 1400px) {
-
-
-  section#hero {
-
-  }
-
-  section#intro .yellow-arrow {
-    top: -7em;
-    height: 50%;
-  }
   section#intro .intro-container {
     margin-top: 12rem;
   }
 
   section#intro .intro-text {
     position: absolute;
-    width: 625px;
+    width: 530px;
     height: 510px;
     left: 120px;
     top: 44px;
