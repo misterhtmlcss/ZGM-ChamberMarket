@@ -212,19 +212,19 @@ section#pos .buttons {
   margin-bottom: 2rem;
 }
 
-section#pos .buttons img {
-  width: 30px;
-  height: 30px;
-}
-
 section#pos .buttons button {
   background: var(--red);
   border: 0;
-  padding: 10px;
+  padding: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+}
+
+section#pos .buttons img {
+  width: 18px;
+  height: 18px;
 }
 
 section#pos .buttons .left-arrow {
