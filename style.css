@@ -155,17 +155,20 @@ section#intro .intro-text {
   background-color: var(--white);
 }
 
-section#intro .intro-text div {
+section#intro .intro-text div,
+section#pos .pos-text > div {
   padding: 3rem 2rem;
 }
 
-section#intro .intro-text h2 {
+section#intro .intro-text h2,
+section#pos .pos-text h2 {
   font-size: 2.125rem;
   font-family: var(--font-1);
   font-weight: 600;
 }
 
-section#intro .intro-text p {
+section#intro .intro-text p,
+section#pos .pos-text p  {
   margin-top: 2rem;
   line-height: 27.2px;
   font-weight: 500;
@@ -188,6 +191,47 @@ section#mountain-man h2 {
   letter-spacing: 0.0625rem;
   color: var(--white);
   margin: 1.5em 2em;
+}
+
+/* POS Section */
+section#pos .pos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#pos .pos-container > img {
+  margin-left: 12rem;
+  height: 426px;
+}
+
+section#pos .buttons {
+  display: flex;
+  width: 120px;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+section#pos .buttons img {
+  width: 30px;
+  height: 30px;
+}
+
+section#pos .buttons button {
+  background: var(--red);
+  border: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+section#pos .buttons .left-arrow {
+  margin-right: 4px;
+}
+section#pos .buttons .right-arrow {
+  margin-left: 4px;
 }
 
 /* Footer Section */
@@ -319,10 +363,9 @@ section#footer #footer-icons a {
     width: 100%;
   }
 
-
-
   section#intro img.woman-reading {
     width: 91%;
+    padding-bottom: 11.25rem;
   }
 
   section#intro .yellow-arrow {
