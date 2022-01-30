@@ -338,6 +338,30 @@ section#footer #footer-icons a {
     top: 36%;
   }
 
+  section#pos .pos-container {
+    padding-top: 8rem;
+    position: relative;
+  }
+
+  section#pos .pos-container > img {
+    margin-left: 0;
+    height: auto;
+    margin-bottom: 23rem;
+  }
+
+  .pos-text {
+    position: absolute;
+    bottom: 3rem;
+    background: white;
+    border: 1px solid var(--green-1);
+    width: 75%;
+    right: 0;
+  }
+
+  .intro-text, .pos-text {
+    box-shadow: 6px 9px 50px 0px hsla(0, 0%, 0%, 0.1);
+  }
+
 }
 
 /* Smooth transition to large device */
