@@ -291,9 +291,25 @@ section#footer #footer-icons a {
   flex-grow: 2;
 }
 
+.laptop-only {
+  display: none;
+}
 
 /* For iPad and up */
 @media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+
+  .laptop-only {
+    display: block;
+  }
+
+  .buttons {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+
   section#mountain-man h2 {
     font-size: 2.625rem;
   }
@@ -359,8 +375,23 @@ section#footer #footer-icons a {
     left: -100px;
   }
 
+  section#pos {
+    position: relative;
+  }
+  section#pos .pos-container .red-diamond {
+    position: absolute;
+    left: -50px;
+    top: -80px;
+    width: 400px;
+  }
+  section#pos .pos-container .pos-text > div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
 /* Smooth transition to large device */
 @media (min-width: 992px) {
+
   section#intro .intro-text div {
     padding: 3rem 15%;
   }
@@ -368,11 +399,14 @@ section#footer #footer-icons a {
   section#hero .hero-image {
     padding-left: 0;
   }
+
+  section#pos .pos-container .pos-woman {
+    width: 100%;
+  }
 }
 
 
 @media (min-width: 1200px) {
-
   section#hero a {
     height: 95%;
   }
