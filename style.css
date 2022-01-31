@@ -253,8 +253,9 @@ section#footer .footer-container a:hover {
   padding-bottom: 5px;
 }
 
-section#footer .footer-details > ul > img {
+section#footer .footer-details > ul {
   margin-bottom: 5rem;
+  margin-top: 5rem;
 }
 
 section#footer ul li {
@@ -481,6 +482,42 @@ section#footer #footer-icons a {
   section#mountain-man img {
     width: 100%;
     max-width: 100rem;
+  }
+
+  section#footer ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  section#footer .footer-details {
+    width: 80%;
+    margin: auto;
+  }
+
+  section#footer .footer-details ul {
+    display: flex;
+    align-items: center;
+  }
+
+
+  section#footer #footer-icons {
+    width: auto;
+    max-width: 100rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  section#footer .footer-container {
+    display: block;
+    margin-top: 5.0625rem;
+    margin-bottom: 7.5625rem;
+    max-width: 100rem;
+    width: 100%;
+  }
+
+  section#footer ul {
+    display: flex;
+    justify-content: space-between;
   }
 
 }
