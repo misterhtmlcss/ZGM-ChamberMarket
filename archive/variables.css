@@ -1,0 +1,22 @@
+/* ========
+    Variables
+  ======== */
+
+/* Colours */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --red: hsl(359.6, 100%, 67.5%);
+  --yellow: hsl(46.3, 97.7%, 66.5%);
+  --green-1: hsl(175.7, 57.4%, 66.9%);
+  --green-2: hsla(176, 57%, 67%, 0.6);
+  --green-3: hsl(185.3, 100%, 35.5%);
+  --green-4: hsl(189.7, 100%, 30.4%);
+  --black: hsl(190.8, 76.5%, 10%);
+}
+
+/* Typography */
+:root {
+  --font-1: 'Montserrat', sans-serif;
+  --font-2: 'Poppins', sans-serif;
+  --font-3: 'Inter', sans-serif;
+}
