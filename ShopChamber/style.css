@@ -88,8 +88,7 @@ section#hero .hero-image {
   padding-left: 28em;
 }
 
-section#hero a,
-section#mountain-man a {
+section#hero a {
   position: absolute;
   top: 0;
   left: 0;
@@ -100,6 +99,12 @@ section#mountain-man a {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+
+}
+section#mountain-man a {
+  text-decoration: none;
+  margin-right: 5rem;
+  margin-top: 3rem;
 }
 
 section#hero a .title-logo {
@@ -175,10 +180,20 @@ section#pos .pos-text p  {
 }
 
 /* Mountain Man Section */
-section#mountain-man div {
-  position: relative;
+section#mountain-man {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+section#mountain-man div {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
 }
 
 section#mountain-man h2 {
@@ -285,19 +300,19 @@ section#footer #footer-icons a {
   margin-right: 3rem;
 }
 
-section#mountain-man .mountain-man-first {
-  height: auto;
-  top: 150px
+section#mountain-man {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
 }
-
-section#mountain-man .mountain-man-second {
-  height: auto;
-  top: 300px
-}
-
-section#mountain-man .mountain-man-third {
-  height: auto;
-  top: 450px
+section#mountain-man > div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 5%;
 }
 
 .spacer {
@@ -419,6 +434,11 @@ section#mountain-man .mountain-man-third {
 
   section#pos .pos-container .pos-woman {
     width: 100%;
+  }
+
+  section#mountain-man a {
+
+    margin-top: 4%;;
   }
 }
 
