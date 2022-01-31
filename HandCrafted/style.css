@@ -1,6 +1,6 @@
 @import 'resets.css';
-@import 'variables.css';
-@import 'buttons.css';
+@import '../variables.css';
+@import '../buttons.css';
 
 
 
@@ -158,6 +158,7 @@ section#intro .intro-text {
 section#intro .intro-text div,
 section#pos .pos-text > div {
   padding: 3rem 2rem;
+  height: 250px;
 }
 
 section#intro .intro-text h2,
