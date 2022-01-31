@@ -103,7 +103,6 @@ section#hero a {
 }
 section#mountain-man a {
   text-decoration: none;
-  margin-right: 5rem;
   margin-top: 3rem;
 }
 
@@ -183,6 +182,39 @@ section#pos .pos-text p  {
   font-weight: 500;
 }
 
+
+/* POS Section */
+section#pos .pos-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#pos .pos-container > img {
+  margin-left: 12rem;
+  height: 426px;
+}
+section#pos .pos-container .yellow-circle {
+  position: absolute;
+  bottom: -145px;
+  left: 0px;
+}
+
+section#pos .pos-container .pos-text {
+  margin-bottom: 10rem;
+}
+
+section#pos .red-diamond {
+  display: none;
+}
+
+.buttons img {
+  width: 18px;
+  height: 18px;
+}
+
+
 /* Mountain Man Section */
 section#mountain-man {
   display: flex;
@@ -217,35 +249,11 @@ section#mountain-man {
   margin-top: 4%;
 }
 
-/* POS Section */
-section#pos .pos-container {
-  position: relative;
+section#mountain-man .chamber-buttons {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-
-section#pos .pos-container > img {
-  margin-left: 12rem;
-  height: 426px;
-}
-section#pos .pos-container .yellow-circle {
-  position: absolute;
-  bottom: -145px;
-  left: 0px;
-}
-
-section#pos .pos-container .pos-text {
-  margin-bottom: 10rem;
-}
-
-section#pos .red-diamond {
-  display: none;
-}
-
-.buttons img {
-  width: 18px;
-  height: 18px;
 }
 
 
@@ -431,10 +439,17 @@ section#footer #footer-icons a {
   section#pos .pos-container .pos-woman {
     width: 100%;
   }
+  section#mountain-man > div {
+    padding-top: 10%;
+  }
+
+  section#mountain-man .chamber-buttons {
+    display: unset;
+  }
 
   section#mountain-man a {
-
-    margin-top: 4%;;
+    padding-top: 10%;
+    margin-right: 5rem;
   }
 }
 
