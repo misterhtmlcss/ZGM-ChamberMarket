@@ -158,6 +158,7 @@ section#intro .intro-text {
 section#intro .intro-text div,
 section#pos .pos-text > div {
   padding: 3rem 2rem;
+  height: 250px;
 }
 
 section#intro .intro-text h2,
@@ -213,6 +214,7 @@ section#pos .pos-container .yellow-circle {
 
 section#pos .pos-container .pos-text {
   margin-bottom: 10rem;
+
 }
 
 section#pos .red-diamond {
