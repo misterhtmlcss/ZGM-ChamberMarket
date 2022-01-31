@@ -12,6 +12,7 @@
   --green-3: hsl(185.3, 100%, 35.5%);
   --green-4: hsl(189.7, 100%, 30.4%);
   --black: hsl(190.8, 76.5%, 10%);
+  --btn-diabled: hsla(0, 44%, 85%, 1);
 }
 
 /* Typography */
