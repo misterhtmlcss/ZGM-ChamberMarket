@@ -1,0 +1,522 @@
+@import 'resets.css';
+@import 'variables.css';
+@import 'buttons.css';
+
+
+
+/* ========
+  Global styles
+  ======== */
+
+html, body {
+  /* background-color: var(--white); */
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+section {
+  width: 100%;
+}
+
+/* ========
+  Typography
+  ======== */
+
+h1 {
+  text-align: center;
+  font-family: var(--font-2);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.125rem;
+  letter-spacing: 0.0625rem;
+  color: var(--white);
+  margin: 1.5em 2em;
+}
+
+/* ========
+  Components
+  ======== */
+
+/* Banner */
+section#banner {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  height: 4.25rem;
+}
+
+section#banner div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100rem;
+}
+
+section#banner img {
+  height: 1.75rem;
+}
+
+/* Provides text for screen reader */
+span.screen-reader {
+  display: none;
+}
+
+/* Hero */
+section#hero {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* background: var(--green-1); */
+  font-size: 20px;
+}
+
+section#hero div {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    width: 100%;
+    max-width: 100rem;
+}
+
+section#hero .hero-image {
+  padding-left: 28em;
+}
+
+section#hero a,
+section#mountain-man a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+section#hero a .title-logo {
+  width: 85%;
+  min-width: 18.9375rem;
+  max-width: 31.125rem;
+}
+section#hero h1 {
+  max-width: 20em;
+}
+
+/* Introduction Section */
+section#intro {
+  background: var(--green-1);
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+section#intro .intro-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 100rem;
+  margin-top: 10rem;
+}
+
+section#intro .woman-reading {
+  transform: scale(1.2);
+  width: 120%;
+  padding-bottom: 31.25rem;
+}
+
+section#intro .yellow-arrow {
+  position: absolute;
+  right: -1.5rem;
+  top: -8rem;
+  height: 22%;
+}
+
+section#intro .intro-text {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 26%;
+  height: 50%;
+  width: 50%;
+  min-height: 490px;
+  min-width: 350px;
+  max-width: 530px;
+  right: 0;
+  background-color: var(--white);
+}
+
+section#intro .intro-text div,
+section#pos .pos-text > div {
+  padding: 3rem 2rem;
+  height: 250px;
+}
+
+section#intro .intro-text div {
+  height: 350px;
+}
+
+section#intro .intro-text h2,
+section#pos .pos-text h2 {
+  font-size: 2.125rem;
+  font-family: var(--font-1);
+  font-weight: 600;
+}
+
+section#intro .intro-text p,
+section#pos .pos-text p  {
+  margin-top: 2rem;
+  line-height: 27.2px;
+  font-weight: 500;
+}
+
+/* Mountain Man Section */
+section#mountain-man div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+section#mountain-man h2 {
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-family: var(--font-1);
+  font-size: 28px;
+  line-height: 2.125rem;
+  letter-spacing: 0.0625rem;
+  color: var(--white);
+  margin: 1.5em 2em;
+}
+
+/* POS Section */
+section#pos .pos-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#pos .pos-container > img {
+  margin-left: 12rem;
+  height: 426px;
+}
+section#pos .pos-container .yellow-circle {
+  position: absolute;
+  bottom: -145px;
+  left: 0px;
+}
+
+section#pos .pos-container .pos-text {
+  margin-bottom: 10rem;
+}
+
+section#pos .red-diamond {
+  display: none;
+}
+
+.buttons img {
+  width: 18px;
+  height: 18px;
+}
+
+
+/* Footer Section */
+section#footer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  font-size: 15px;
+  background-color: var(--black);
+  color: var(--white);
+  margin-bottom: -20px;
+}
+
+section#footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5.0625rem;
+  margin-bottom: 2.0625rem;
+  max-width: 100em;
+}
+section#footer .footer-container a {
+  color: var(--white);
+  text-decoration: none;
+  font-family: var(--font-3) ;
+
+}
+section#footer .footer-container a:hover {
+  border-bottom: 2px solid var(--white);
+  padding-bottom: 5px;
+}
+
+section#footer .footer-details > ul {
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+section#footer ul li {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 120%;
+}
+
+section#footer ul li div {
+  margin-top: 4rem;
+}
+
+section#footer ul li {
+  list-style-type: none;
+}
+
+section#footer #footer-icons {
+  display: flex;
+  align-items: center;
+  width: calc(100% - 4rem);
+  max-width: 31.25rem;
+  margin-bottom: 4rem;
+}
+
+section#footer #footer-icons a {
+  position: relative;
+  margin-right: 3rem;
+}
+
+.spacer {
+  flex-grow: 2;
+}
+
+.laptop-only {
+  display: none;
+}
+
+/* For iPad and up */
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+
+  .laptop-only {
+    display: block;
+  }
+
+  .buttons {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+
+  section#mountain-man h2 {
+    font-size: 2.625rem;
+  }
+
+  section#banner a {
+    margin-left: 4.375rem;
+  }
+
+  section#banner div {
+    justify-content: flex-start;
+    margin-left: 2rem;
+  }
+
+  section#intro .intro-container {
+    margin-top: 8rem;
+  }
+
+  section#intro .yellow-arrow {
+    top: -11rem;
+    height: 25%;
+    top: -4rem;
+  }
+
+  section#intro img.woman-reading {
+    transform: translateX(100px);
+  }
+
+  section#intro .intro-text {
+    width: 75%;
+    top: 36%;
+  }
+
+  section#pos .pos-container {
+    padding-top: 10rem;
+    position: relative;
+  }
+
+  section#pos .pos-container > img {
+    margin-left: 0;
+    height: auto;
+    margin-bottom: 34rem;
+  }
+
+  section#pos .pos-text {
+    position: absolute;
+    bottom: -2rem;
+    background: white;
+    border: 1px solid var(--green-1);
+    width: 75%;
+    right: 0;
+  }
+
+  .intro-text, .pos-text {
+    box-shadow: 6px 9px 50px 0px hsla(0, 0%, 0%, 0.1);
+  }
+
+  section#pos .pos-container > div {
+    padding: 2rem 2rem 5rem 2rem;
+  }
+
+  section#pos .pos-container .yellow-circle {
+    top: 950px;
+    left: -100px;
+    transform: rotate(-10deg);
+  }
+
+  section#pos {
+    position: relative;
+  }
+  section#pos .pos-container .red-diamond {
+    display: block;
+    position: absolute;
+    left: -50px;
+    top: -80px;
+    width: 400px;
+  }
+
+  section#pos .pos-container .pos-text > div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+/* Smooth transition to large device */
+@media (min-width: 992px) {
+
+  section#intro .intro-text div {
+    padding: 3rem 15%;
+  }
+
+  section#hero .hero-image {
+    padding-left: 0;
+  }
+
+  section#pos .pos-container .pos-woman {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  section#hero a {
+    height: 95%;
+  }
+
+  section#hero .hero-image {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  section#intro .woman-reading,
+  section#pos .pos-container .pos-woman {
+    width: 91%;
+    padding-bottom: 11.25rem;
+  }
+
+  section#intro .yellow-arrow {
+    top: -6rem;
+    height: 36%;
+    height: 50%;
+    max-height: 22rem;
+  }
+
+  section#intro .intro-container {
+    margin-top: 12rem;
+  }
+
+  section#intro .intro-text {
+    position: absolute;
+    width: 530px;
+    height: 510px;
+    left: 120px;
+    top: 44px;
+  }
+
+  section#pos .pos-container {
+    align-items: unset;
+  }
+
+  section#pos .pos-container .pos-woman {
+    width: 86%;
+    padding-bottom: 0;
+  }
+
+  section#pos .pos-container > div {
+    padding: 2rem;
+  }
+
+  section#pos .pos-text {
+    bottom: 8%;
+    width: 40%;
+    right: 0;
+  }
+
+  section#pos .pos-container > img {
+    margin-bottom: 12rem;
+  }
+
+  section#pos .pos-container .yellow-circle {
+    top: 20%;
+    left: 70%;
+    transform: rotate(-10deg);
+    z-index: -1;
+  }
+
+  section#mountain-man img {
+    width: 100%;
+    max-width: 100rem;
+  }
+
+  section#footer ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  section#footer .footer-details {
+    width: 80%;
+    margin: auto;
+  }
+
+  section#footer .footer-details ul {
+    display: flex;
+    align-items: center;
+  }
+
+
+  section#footer #footer-icons {
+    width: auto;
+    max-width: 100rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  section#footer .footer-container {
+    display: block;
+    margin-top: 5.0625rem;
+    margin-bottom: 7.5625rem;
+    max-width: 100rem;
+    width: 100%;
+  }
+
+  section#footer ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
