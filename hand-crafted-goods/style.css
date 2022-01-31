@@ -161,6 +161,10 @@ section#pos .pos-text > div {
   height: 250px;
 }
 
+section#intro .intro-text div {
+  height: 350px;
+}
+
 section#intro .intro-text h2,
 section#pos .pos-text h2 {
   font-size: 2.125rem;
@@ -234,6 +238,7 @@ section#footer {
   font-size: 15px;
   background-color: var(--black);
   color: var(--white);
+  margin-bottom: -20px;
 }
 
 section#footer .footer-container {
