@@ -61,7 +61,7 @@ section#banner img {
 }
 
 /* Provides text for screen reader */
-section#banner span {
+span.screen-reader {
   display: none;
 }
 
@@ -131,7 +131,7 @@ section#intro .intro-container {
 section#intro .woman-reading {
   transform: scale(1.2);
   width: 120%;
-  padding-bottom: 500px;
+  padding-bottom: 31.25rem;
 }
 
 section#intro .yellow-arrow {
@@ -195,6 +195,7 @@ section#mountain-man h2 {
 
 /* POS Section */
 section#pos .pos-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -204,35 +205,21 @@ section#pos .pos-container > img {
   margin-left: 12rem;
   height: 426px;
 }
-
-section#pos .buttons {
-  display: flex;
-  width: 120px;
-  justify-content: space-between;
-  margin-bottom: 2rem;
+section#pos .pos-container .yellow-circle {
+  position: absolute;
+  bottom: -145px;
+  left: 0px;
 }
 
-section#pos .buttons button {
-  background: var(--red);
-  border: 0;
-  padding: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
+section#pos .pos-container .pos-text {
+  margin-bottom: 10rem;
 }
 
-section#pos .buttons img {
+.buttons img {
   width: 18px;
   height: 18px;
 }
 
-section#pos .buttons .left-arrow {
-  margin-right: 4px;
-}
-section#pos .buttons .right-arrow {
-  margin-left: 4px;
-}
 
 /* Footer Section */
 section#footer {
@@ -339,19 +326,19 @@ section#footer #footer-icons a {
   }
 
   section#pos .pos-container {
-    padding-top: 8rem;
+    padding-top: 10rem;
     position: relative;
   }
 
   section#pos .pos-container > img {
     margin-left: 0;
     height: auto;
-    margin-bottom: 23rem;
+    margin-bottom: 34rem;
   }
 
-  .pos-text {
+  section#pos .pos-text {
     position: absolute;
-    bottom: 3rem;
+    bottom: -2rem;
     background: white;
     border: 1px solid var(--green-1);
     width: 75%;
@@ -362,7 +349,15 @@ section#footer #footer-icons a {
     box-shadow: 6px 9px 50px 0px hsla(0, 0%, 0%, 0.1);
   }
 
-}
+  section#pos .pos-container > div {
+    padding: 2rem 2rem 5rem 2rem;
+  }
+
+  section#pos .pos-container .yellow-circle {
+    top: 950px;
+    transform: rotate(-10deg);
+    left: -100px;
+  }
 
 /* Smooth transition to large device */
 @media (min-width: 992px) {

@@ -6,6 +6,7 @@
 
 .btn:hover {
   border: 1px solid var(--white);
+  cursor: pointer;
 }
 
 .btn-primary  {
@@ -14,18 +15,39 @@
   background: var(--red);
 }
 
-.btn.slider-left-arrow {
+.buttons {
+  display: flex;
+  width: 120px;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.buttons button {
+  background: var(--red);
+  border: 0;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+
+.buttons .left-arrow {
+  margin-right: 4px;
+}
+
+.buttons .right-arrow {
+  margin-left: 4px;
+}
+
+.buttons .left-arrow-disabled {
 
 }
 
-.btn.slider-left-arrow-disabled {
+
+.buttons .right-arrow-disabled {
 
 }
 
-.btn.slider-right-arrow {
 
-}
-
-.btn.slider-right-arrow-disabled {
-
-}
