@@ -1,6 +1,6 @@
 @import 'resets.css';
-@import 'variables.css';
-@import 'buttons.css';
+@import '../variables.css';
+@import '../buttons.css';
 
 
 

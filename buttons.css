@@ -15,6 +15,18 @@
   background: var(--red);
 }
 
+.btn-secondary {
+  width: 16.6875rem;
+  height: 60px;
+  background: var(--yellow);
+}
+
+.btn-third {
+  width: 16.6875rem;
+  height: 60px;
+  background: var(--green-2);
+}
+
 .buttons {
   display: flex;
   width: 120px;

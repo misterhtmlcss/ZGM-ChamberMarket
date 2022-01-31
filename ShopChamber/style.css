@@ -1,6 +1,6 @@
 @import 'resets.css';
-@import 'variables.css';
-@import 'buttons.css';
+@import '../variables.css';
+@import '../buttons.css';
 
 
 
@@ -283,6 +283,21 @@ section#footer #footer-icons {
 section#footer #footer-icons a {
   position: relative;
   margin-right: 3rem;
+}
+
+section#mountain-man .mountain-man-first {
+  height: auto;
+  top: 150px
+}
+
+section#mountain-man .mountain-man-second {
+  height: auto;
+  top: 300px
+}
+
+section#mountain-man .mountain-man-third {
+  height: auto;
+  top: 450px
 }
 
 .spacer {
